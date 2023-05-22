@@ -26,10 +26,10 @@ bot.on(BotEvents.MESSAGE_RECEIVED, async (message, response) => {
         let gasPrices = '';
 
         $('tr').each((index, element) => {
-            const price = $(element).find('td:nth-child(3)').text();
-            const date = $(element).find('td:nth-child(1)').text();
+            const disel = $(element).find('td:nth-child(3)').text();
+            const benzin = $(element).find('td:nth-child(2)').text();
             if(price && date) {
-                gasPrices += `Date: ${date}, Price: ${price}\n`;
+                gasPrices += `Benzin: ${benzin}, Dizel: ${disel}\n`;
             }
         });
 
