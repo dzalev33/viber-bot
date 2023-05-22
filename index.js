@@ -28,7 +28,7 @@ bot.on(BotEvents.MESSAGE_RECEIVED, async (message, response) => {
         $('tr').each((index, element) => {
             const disel = $(element).find('td:nth-child(3)').text();
             const benzin = $(element).find('td:nth-child(2)').text();
-            if(price && date) {
+            if(disel && benzin) {
                 gasPrices += `Benzin: ${benzin}, Dizel: ${disel}\n`;
             }
         });
