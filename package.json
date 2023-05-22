@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "*",
     "express": "^4.18.2",
     "viber-bot": "^1.0.18"
   }
